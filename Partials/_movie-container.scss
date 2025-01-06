@@ -1,0 +1,370 @@
+#movie-container {
+    box-shadow: 0 0 25px #083344;
+    backdrop-filter: blur(15px);
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    .movie-image {
+        width: 35%;
+        & img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+    .movie-details {
+        width: 65%;
+        .movie-header-details {
+            display: flex;
+            .left-detail {
+                width: 60%;
+                .movie-title {
+                    & h3 {
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+                }
+                .movie-genre {
+                    & h3 {
+                        & span {
+        
+                        }
+                    }
+                }
+                .movie-year {
+                    & h3 {
+                        & span {
+        
+                        }
+                    } 
+                }
+                .movie-time {
+                    & h3 {
+                        & span {
+        
+                        }
+                    } 
+                }
+                .movie-rated {
+                    & h3 {
+                        & span {
+        
+                        }
+                    } 
+                }
+                .rating {
+                    
+                    .rating-icons {
+                        & i {
+        
+                        }
+                    }
+                    & h3 {
+                        & span {
+        
+                        }
+                    }
+                }
+            }
+            .right-detail {
+                width: 25rem;
+                overflow: hidden;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+        .plot {
+            & h3 {
+                & p {
+
+                }
+            }
+        }
+        .actors {
+            & h3 {
+                & p {
+
+                }
+            }
+        }
+        .watchBtn {
+            margin: .5rem 0rem;
+            transition: all .3s ease-in-out;
+            &:hover {
+                background: $text-color;
+            }
+            & a {
+                text-decoration: none;
+                color: $text-color;
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: #083344;
+                }
+                & i {
+                    font-size: 1.5rem;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        color: #083344;
+
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1024px){
+    box-shadow: 0 0 25px #083344;
+    backdrop-filter: blur(15px);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    .movie-image {
+        width: 100%;
+        & img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+    .movie-details {
+        width: 100%;
+        .movie-header-details {
+            .left-detail {
+                width: 60%;
+                .movie-title {
+                    & h3 {
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+                }
+                .movie-genre {
+                    & h3 {
+                        & span {
+        
+                        }
+                    }
+                }
+                .movie-year {
+                    & h3 {
+                        & span {
+        
+                        }
+                    } 
+                }
+                .movie-time {
+                    & h3 {
+                        & span {
+        
+                        }
+                    } 
+                }
+                .movie-rated {
+                    & h3 {
+                        & span {
+        
+                        }
+                    } 
+                }
+                .rating {
+                    
+                    .rating-icons {
+                        & i {
+        
+                        }
+                    }
+                    & h3 {
+                        & span {
+        
+                        }
+                    }
+                }
+            }
+            .right-detail {
+                width: 25rem;
+                overflow: hidden;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+        .plot {
+            & h3 {
+                & p {
+
+                }
+            }
+        }
+        .actors {
+            & h3 {
+                & p {
+
+                }
+            }
+        }
+        .watchBtn {
+            width: 100%;
+            margin: .5rem;
+            transition: all .3s ease-in-out;
+            &:hover {
+                background: $text-color;
+            }
+            & a {
+                text-decoration: none;
+                color: $text-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: .5rem;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: #083344;
+                }
+                & i {
+                    font-size: 1.5rem;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        color: #083344;
+
+                    }
+                }
+            }
+        }
+    }
+    }
+    @media (max-width: 768px){
+    box-shadow: 0 0 25px #083344;
+    backdrop-filter: blur(15px);
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    .movie-image {
+        width: 100%;
+        & img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+    .movie-details {
+        width: 100%;
+        .movie-header-details {
+            display: flex;
+            .left-detail {
+                width: 100%;
+                .movie-title {
+                    & h3 {
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+                }
+                .movie-genre {
+                    & h3 {
+                        & span {
+        
+                        }
+                    }
+                }
+                .movie-year {
+                    & h3 {
+                        & span {
+        
+                        }
+                    } 
+                }
+                .movie-time {
+                    & h3 {
+                        & span {
+        
+                        }
+                    } 
+                }
+                .movie-rated {
+                    & h3 {
+                        & span {
+        
+                        }
+                    } 
+                }
+                .rating {
+                    
+                    .rating-icons {
+                        & i {
+        
+                        }
+                    }
+                    & h3 {
+                        & span {
+        
+                        }
+                    }
+                }
+            }
+            .right-detail {
+                display: none;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+        .plot {
+            & h3 {
+                & p {
+
+                }
+            }
+        }
+        .actors {
+            & h3 {
+                & p {
+
+                }
+            }
+        }
+        .watchBtn {
+            width: 100%;
+            margin: .5rem 0rem;
+            transition: all .3s ease-in-out;
+            &:hover {
+                background: $text-color;
+            }
+            & a {
+                text-decoration: none;
+                color: $text-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: .5rem;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: #083344;
+                }
+                & i {
+                    font-size: 1.5rem;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        color: #083344;
+
+                    }
+                }
+            }
+        }
+    }
+    }
+}

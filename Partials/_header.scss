@@ -1,0 +1,27 @@
+#header {
+    width: 100%;
+    display: flex;
+    border: #6b7280 solid 1px;
+    border-radius: .8rem;
+   #inputField {
+    width: 70%;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    color: $text-color;
+    background: transparent;
+   }
+   #searchBtn {
+    width: 30%;
+    border: none;
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $text-color;
+    background: #083344;
+    cursor: pointer;
+   }
+}

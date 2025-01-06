@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Movie-Search-App</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <input type="text" id="inputField" placeholder="Please Enter Movie Name...">
+            <button type="button" id="searchBtn" class="searchBtn">Search</button>
+        </header>
+        <section id="result" class="result"></section>
+        <section id="movie-container">
+            <div class="movie-image">
+                <img src="${fetchedData.Poster}" alt="">
+            </div>
+            <div class="movie-details">
+                <div class="movie-header-details">
+                    <div class="left-detail">
+                        <div class="movie-title">
+                            <h3>${fetchedData.Title}</h3>
+                        </div>
+                        <div class="movie-genre">
+                            <h3>Genre: <span>${fetchedData.Genre}</span></h3>
+                        </div>
+                        <div class="movie-year">
+                            <h3>Year: <span>${fetchedData.Year}</span></h3>
+                        </div>
+                        <div class="movie-time">
+                            <h3>Movie Time In Minutes: <span>${fetchedData.Runtime}</span></h3>
+                        </div>
+                        <div class="movie-rated">
+                            <h3>Rated: <span>${fetchedData.Rated}</span></h3>
+                        </div>
+                        <div class="rating">
+                            <h3>Rating: <span>${fetchedData.imdbRating}</span></h3>
+                            <div class="rating-icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-detail">
+                        <img src="./Images/3d-rendering-person-watching-movie-with-popcorn.png" alt="">
+                    </div>
+                </div>
+                <div class="plot">
+                    <h3>Plot: <p>${fetchedData.Plot}</p></h3>
+                </div>
+                <div class="actors">
+                    <h3>Actors: <p>${fetchedData.Actors}</p></h3>
+                </div>
+                <button type="button" id="watchBtn" class="watchBtn">
+                    <a href="#"><i class="fa-solid fa-circle-play fa-fade"></i> Watch Now</a>
+                </button>
+            </div>
+        </section>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
