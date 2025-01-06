@@ -3,6 +3,21 @@ const inputField = document.getElementById('inputField')
 const searchBtn = document.getElementById('searchBtn')
 const resultContainer = document.getElementById('result')
 const movieContainer = document.getElementById('movie-container')
+
+const spinnerLoader = document.querySelector('.loading')
+const mainContainer = document.querySelector('.container')
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    spinnerLoader.classList.remove('hide')
+    mainContainer.classList.add('hide')
+})
+
+window.addEventListener('load', ()=>{
+    setTimeout(()=>{
+        spinnerLoader.classList.add('hide')
+        mainContainer.classList.remove('hide')
+    }, 3000)
+})
 searchBtn.addEventListener('click', async()=>{
     const userInput = inputField.value
     if(userInput === ''){
